@@ -1,0 +1,27 @@
+1. A function called "multiplication" that returns the product of the two input numbers.
+   Expect multiplication(2, 5) to be 10.
+   Expect multiplaction(2, a) to be an error.
+   Expect multiplication(2, 3, 5) to be an error.
+   Expect multiplication(-2, 5) to be -10, a negative product.
+   Expect multiplaction(-5, -3) to be 15, a positive product.
+   Expect multiplaction(2, 5) to be a number.
+
+2. A function called "concatOdds" takes two arrays of integers as arguments. It should return a single array that only contains the odd numbers, in ascending order, from both of the arrays.
+   Expect ([4, 6, 8], [10, 12, 16, 20]) to return an empty array [], as all of the numbers are even.
+   Expect ([1, 1, 1, 3], [1, 1, 3, 5, 7]) to return an array: [1, 3, 5, 7] as duplicate numbers do not get filtered to the new array; only one can exist in the new array at a time.
+   Expect ([a, 2, 5], [b, 4, 6]) to return an error, as this function only accepts numbers.
+   Expect ([2, 5, 6, 8], [10, 15, 18]) to return even numbers in the new array.
+   Expect ([-1, 3, 5], [6, 9, 12]) to return [-1, 3, 5, 9], as negative numbers are also counted in the array.
+   Expect ([-1, 1, 5], [1, 5, 7, 10]) to return [-1, 1, 5, 7], as negative numbers are distinctly different from positive numbers, so each are counted in the new array if present.
+
+3. A shopping cart checkout feature that allows a user to check out as a guest (without an account), or as a logged-in user. They should be allowed to do either, but should be asked if they want to create an account or log in if they check out as a guest.
+   When a user with an empty cart selects to checkout as a guest or to log into their account, the user should receive an error that states "There are no items in your cart."
+   When a user decides to checkout as a guest, they should be able to process their order without needing to create an account.
+   When a user correctly logs in, they should receive a message that states "You've successfully logged in."
+   When a user chooses to checkout as a guest but changes their mind afterwards, they should be able to press the 'back' button which will take them to the home screen where they can choose to either log in or checkout as a guest.
+   When a user checks out, their cart should be displayed in a list on the screen as each item is scanned in.
+   When a user checks out as a guest, they should receive a prompt asking for their name and phone number.
+   When a user checks out as a guest and does not provide their name and phone number, they should receive an error message telling them that these questions are required fields.
+   When a user incorrectly enters their login information, they should receive an error message stating "Your credentials are invalid. Please try again."
+   When a user incorrectly enters their login information 2 or more times, they should receive a link to a "forgot password" screen/program.
+   When a user incorrectly enters their login information 5 times, they should receive an error that states "Your credentials are invalid. Your account has been locked."
